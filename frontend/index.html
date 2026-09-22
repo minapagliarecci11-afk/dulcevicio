@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dulce Vicio | Pastelería Artesanal - El gusto que le debíamos a la ciudad</title>
+  <meta name="description" content="Pastelería artesanal Dulce Vicio. Tiramisú, Brownie, Chocotorta, Turrón de Quaker, Budín de Pan, Flan casero y Cookies estilo NY. Compra online en cuotas sin interés y con total respaldo de la Ley 24.240." />
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg" />
+  
+  <!-- Estilos de diseño -->
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+
+  <!-- 1. Barra Superior Legal: Ley 24.240 y Redes Sociales -->
+  <div class="top-notice-bar" id="top-legal-bar">
+    <div class="ticker-content">
+      <span class="badge-tag">TRENDING EN TIKTOK 🔥</span>
+      <span>¡Envío express a toda la ciudad en pedidos de hoy! 🛵</span>
+    </div>
+    <div class="top-actions">
+      <a href="#" class="link-ley24240 trigger-ley24240-info" id="top-ley24240-link">
+        🛡️ Ley 24.240 de Defensa del Consumidor
+      </a>
+      <button class="btn-arrepentimiento-top trigger-arrepentimiento" id="top-btn-arrepentimiento" title="Botón de Arrepentimiento conforme a Res. 424/2020">
+        ↩️ Botón de Arrepentimiento
+      </button>
+    </div>
+  </div>
+
+  <!-- 2. Navegación Principal -->
+  <header class="navbar" id="main-navbar">
+    <div class="nav-container">
+      <a href="#inicio" class="brand-logo" id="nav-brand-logo">
+        <img src="assets/images/logo.svg" alt="Dulce Vicio Pastelería Artesanal Logo" />
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#inicio" class="nav-item">Inicio</a></li>
+        <li><a href="#menu-productos" class="nav-item">Carta de Postres</a></li>
+        <li><a href="#comunidad-tiktok" class="nav-item">Comunidad TikTok</a></li>
+        <li><a href="#ley-consumidor" class="nav-item">Tus Derechos (Ley 24.240)</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-pill-nav" title="Seguinos en Instagram">
+          <span>📸</span> @dulcevicio.pasteleria
+        </a>
+        <button class="btn-cart-toggle" id="btn-open-cart" aria-label="Abrir Carrito de Compras">
+          🛒
+          <span class="cart-counter" id="cart-badge-count">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- 3. Sección Hero -->
+    <section class="hero-section" id="inicio">
+      <div class="hero-grid">
+        <div class="hero-text-content">
+          <div class="hero-badge-container">
+            <span>✨</span>
+            <span class="hero-badge-text">EL GUSTO QUE LE DEBÍAMOS A LA CIUDAD</span>
+          </div>
+          
+          <h1 class="hero-title">
+            Pastelería <span class="highlight">artesanal</span> que se vuelve tu vicio favorito.
+          </h1>
+
+          <p class="hero-description">
+            <strong>Dulce Vicio</strong> surge de nuestro deseo genuino de compartir nuestra pastelería y darle un gusto a nuestra ciudad. Creado para los amantes de las texturas reales, el chocolate intenso y las recetas que se vuelven virales.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#menu-productos" class="btn-primary" id="hero-btn-pedir">
+              <span>🍰</span> Ver Menú & Pedir Ahora
+            </a>
+            <a href="#comunidad-tiktok" class="btn-secondary" id="hero-btn-social">
+              <span>📱</span> Ver en TikTok & Reels
+            </a>
+          </div>
+
+          <div class="hero-social-proof">
+            <div class="social-stat">
+              <span class="stat-number">+18.000</span>
+              <span class="stat-label">Postres Entregados</span>
+            </div>
+            <div class="social-stat">
+              <span class="stat-number">4.9 ⭐</span>
+              <span class="stat-label">Valoración Gen Z</span>
+            </div>
+            <div class="social-stat">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Artesanal & Fresco</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-media-wrapper">
+          <div class="hero-showcase-card">
+            <img src="assets/images/tiramisu.jpg" alt="Tiramisú Artesanal Dulce Vicio" class="hero-showcase-img" />
+            <div class="hero-floating-badge">
+              <span>🔥</span> #1 Más Vendido en TikTok
+            </div>
+          </div>
+          <div class="hero-story-bubble">
+            <div class="bubble-avatar">😋</div>
+            <div class="bubble-text">
+              <strong>"El mejor Brownie y Chocotorta de la ciudad"</strong>
+              <span>@valen.desserts en TikTok</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Tira de Beneficios y Transparencia Legal -->
+    <section class="benefits-strip">
+      <div class="benefits-grid">
+        <div class="benefit-item">
+          <div class="benefit-icon">💳</div>
+          <div class="benefit-info">
+            <h4>Hasta 3 Cuotas</h4>
+            <p>Comprá tus postres en cuotas sin interés con todas las tarjetas.</p>
+          </div>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-icon">⏱️</div>
+          <div class="benefit-info">
+            <h4>Envío Rápido y Fresco</h4>
+            <p>Horneamos en el día para que te llegue con frescura total.</p>
+          </div>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-icon">🛡️</div>
+          <div class="benefit-info">
+            <h4>Garantía Ley 24.240</h4>
+            <p>Garantía de calidad y trato digno al consumidor garantizado.</p>
+          </div>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-icon">↩️</div>
+          <div class="benefit-info">
+            <h4>Arrepentimiento 10 Días</h4>
+            <p>Derecho de revocación online según Art. 34 y Res. 424/2020.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Catálogo de Postres -->
+    <section class="catalog-section" id="menu-productos">
+      <div class="section-header">
+        <span class="section-badge">Nuestra Carta Artesanal</span>
+        <h2 class="section-title">Elegí tu próximo Dulce Vicio</h2>
+        <p class="section-subtitle">
+          Elaborados desde cero, con ingredientes seleccionados de primera calidad y precios justos y transparentes.
+        </p>
+      </div>
+
+      <div class="catalog-controls">
+        <div class="search-input-wrapper">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="search-input" class="search-input" placeholder="Buscar tiramisú, brownie, cookie, flan..." />
+        </div>
+
+        <div class="filter-categories">
+          <button class="btn-filter active" data-category="all">Todos los Postres</button>
+          <button class="btn-filter" data-category="Favoritos Argentinos">Favoritos Argentinos</button>
+          <button class="btn-filter" data-category="Chocolatería">Chocolatería</button>
+          <button class="btn-filter" data-category="Postres Fríos">Postres Fríos</button>
+          <button class="btn-filter" data-category="Cookies & Bocados">Cookies</button>
+        </div>
+      </div>
+
+      <!-- Grid dinámico alimentado por API o dataset local -->
+      <div class="products-grid" id="products-grid">
+        <!-- Renderizado dinámicamente con app.js -->
+      </div>
+    </section>
+
+    <!-- 6. Comunidad Viral TikTok & Instagram -->
+    <section class="social-community-section" id="comunidad-tiktok">
+      <div class="community-container">
+        <div class="community-header">
+          <div>
+            <span style="color: var(--primary); font-weight: 800; font-size: 0.85rem; letter-spacing: 1.5px; text-transform: uppercase;">#DulceVicioBakery</span>
+            <h2>Viral en TikTok & Reels 📲</h2>
+          </div>
+          <div class="social-handles-badges">
+            <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" class="social-badge-btn tiktok">
+              <span>🎵</span> TikTok @dulcevicio_oficial
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-badge-btn instagram">
+              <span>📸</span> Instagram @dulcevicio.pasteleria
+            </a>
+          </div>
+        </div>
+
+        <div class="social-cards-grid">
+          <!-- Card 1 -->
+          <div class="social-reel-card">
+            <div class="reel-thumb-wrapper">
+              <img src="assets/images/brownie.jpg" alt="Video Brownie Fudgy" class="reel-thumb" />
+              <div class="reel-platform-icon">🎵</div>
+              <div class="reel-views-pill">▶️ 142.5K reproducciones</div>
+            </div>
+            <div class="reel-caption-box">
+              <div class="reel-user-info">
+                <span class="reel-user-handle">@agus_foodie</span>
+              </div>
+              <p class="reel-text">"Probando el brownie de Dulce Vicio... ¡no puede ser lo húmedo y lleno de nueces que está! 🤤🍫"</p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="social-reel-card">
+            <div class="reel-thumb-wrapper">
+              <img src="assets/images/chocotorta.jpg" alt="Video Chocotorta" class="reel-thumb" />
+              <div class="reel-platform-icon">📸</div>
+              <div class="reel-views-pill">▶️ 89.2K vistas</div>
+            </div>
+            <div class="reel-caption-box">
+              <div class="reel-user-info">
+                <span class="reel-user-handle">@pastry_vibes_arg</span>
+              </div>
+              <p class="reel-text">"Capas perfectas y la cantidad justa de dulce de leche. Dulce Vicio entendió todo."</p>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="social-reel-card">
+            <div class="reel-thumb-wrapper">
+              <img src="assets/images/flan.jpg" alt="Video Flan Casero" class="reel-thumb" />
+              <div class="reel-platform-icon">🎵</div>
+              <div class="reel-views-pill">▶️ 210.8K reproducciones</div>
+            </div>
+            <div class="reel-caption-box">
+              <div class="reel-user-info">
+                <span class="reel-user-handle">@dulcevicio_oficial</span>
+              </div>
+              <p class="reel-text">"El secreto del flan más cremoso de la ciudad: huevos de campo y caramelo recién hecho."</p>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="social-reel-card">
+            <div class="reel-thumb-wrapper">
+              <img src="assets/images/cookie.svg" alt="Video Cookie New York" class="reel-thumb" />
+              <div class="reel-platform-icon">🎵</div>
+              <div class="reel-views-pill">▶️ 340.1K reproducciones</div>
+            </div>
+            <div class="reel-caption-box">
+              <div class="reel-user-info">
+                <span class="reel-user-handle">@mateoylara</span>
+              </div>
+              <p class="reel-text">"El chocolate derretido que sale de esta cookie gigante... 10/10 indiscutible."</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Sección Dedicada: Ley 24.240 y Defensa del Consumidor -->
+    <section class="ley24240-section" id="ley-consumidor">
+      <div class="ley24240-card">
+        <div class="ley-info-content">
+          <div class="ley-badge-official">
+            <span>⚖️</span> CUMPLIMIENTO LEY NACIONAL N° 24.240
+          </div>
+          <h2 class="ley-title">Información al Cliente & Derechos del Consumidor</h2>
+          <p class="ley-description">
+            En <strong>Dulce Vicio</strong> promovemos relaciones de consumo transparentes, justas y dignas, en cumplimiento con la <strong>Ley Nacional N° 24.240 de Defensa del Consumidor</strong> de la República Argentina y la <strong>Resolución N° 424/2020</strong> de la Secretaría de Comercio Interior.
+          </p>
+
+          <ul class="ley-rights-list">
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span><strong>Art. 4 (Derecho a la Información):</strong> Te brindamos datos certeros, claros y detallados sobre ingredientes, precios finales en pesos, opciones de cuotas y plazos de entrega.</span>
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span><strong>Art. 8 bis (Trato Digno y Equitativo):</strong> Garantizamos atención sin prácticas abusivas, discriminación ni trabas burocráticas.</span>
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span><strong>Art. 10 ter y 34 (Derecho de Revocación):</strong> En compras a distancia dispones de <strong>10 (diez) días corridos</strong> para revocar tu compra online sin penalidad ni costo alguno.</span>
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span><strong>Arts. 11 y 12 (Garantía Legal):</strong> Cobertura de garantía legal y frescura asegurada sobre todos nuestros productos de repostería artesanal.</span>
+            </li>
+          </ul>
+
+          <div>
+            <button class="btn-secondary trigger-ley24240-info" id="btn-conocer-mas-ley">
+              📖 Conocer Más sobre tus Derechos
+            </button>
+          </div>
+        </div>
+
+        <!-- Caja destacada del Botón de Arrepentimiento -->
+        <div class="arrepentimiento-box">
+          <div class="arrepentimiento-icon">↩️</div>
+          <h3>Botón de Arrepentimiento</h3>
+          <p>
+            ¿Hiciste un pedido online y deseas cancelarlo? Podés revocar tu compra dentro del plazo legal de 10 días corridos de forma simple y 100% gratuita.
+          </p>
+          <button class="btn-arrepentimiento-main trigger-arrepentimiento" id="btn-arrepentimiento-card">
+            Solicitar Revocación / Arrepentimiento
+          </button>
+          <div style="font-size: 0.75rem; color: var(--text-light); margin-top: 12px;">
+            Resolución 424/2020 - Secretaría de Comercio Interior
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 8. Pie de Página -->
+  <footer class="main-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h3>Dulce<span style="color: var(--primary);">Vicio</span></h3>
+        <p>
+          Pastelería artesanal nacida del deseo de compartir sabores auténticos y darle un gusto a nuestra ciudad.
+        </p>
+        <div style="margin-top: 16px; font-weight: 700; color: white;">
+          🍰 Hecho a mano cada mañana
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Postres Virales</h4>
+        <ul class="footer-links">
+          <li><a href="#menu-productos">Tiramisú ($4.500)</a></li>
+          <li><a href="#menu-productos">Brownie Fudgy ($3.000)</a></li>
+          <li><a href="#menu-productos">Chocotorta ($4.000)</a></li>
+          <li><a href="#menu-productos">Turrón de Quaker ($4.500)</a></li>
+          <li><a href="#menu-productos">Budín de Pan ($2.500)</a></li>
+          <li><a href="#menu-productos">Flan Casero ($3.000)</a></li>
+          <li><a href="#menu-productos">Cookie NY ($2.500)</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Redes Sociales</h4>
+        <ul class="footer-links">
+          <li><a href="https://tiktok.com" target="_blank" rel="noopener noreferrer">TikTok: @dulcevicio_oficial</a></li>
+          <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram: @dulcevicio.pasteleria</a></li>
+          <li><a href="https://whatsapp.com" target="_blank" rel="noopener noreferrer">WhatsApp: +54 9 11 2345-6789</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Defensa del Consumidor</h4>
+        <ul class="footer-links">
+          <li><a href="#" class="trigger-ley24240-info">Derechos bajo Ley 24.240</a></li>
+          <li><a href="#" class="trigger-arrepentimiento" style="color: #ff85a1; font-weight: 700;">Botón de Arrepentimiento</a></li>
+          <li><a href="https://www.argentina.gob.ar/produccion/defensadelconsumidor" target="_blank" rel="noopener noreferrer">Dirección Nacional de Defensa del Consumidor</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div>
+        © 2026 Dulce Vicio Pastelería Artesanal. Todos los derechos reservados.
+      </div>
+      <div>
+        Cumplimiento estricto Ley 24.240 y Res. 424/2020 Secretaría de Comercio Interior.
+      </div>
+    </div>
+  </footer>
+
+  <!-- 9. Carrito Lateral (Drawer) -->
+  <div class="cart-drawer-overlay" id="cart-overlay"></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-label="Carrito de compras">
+    <div class="cart-header">
+      <h3><span>🛍️</span> Tu Pedido</h3>
+      <button class="btn-close-drawer" id="btn-close-cart" aria-label="Cerrar carrito">✕</button>
+    </div>
+
+    <div class="cart-items-container" id="cart-items-list">
+      <!-- Elementos cargados dinámicamente -->
+    </div>
+
+    <div class="cart-footer">
+      <div class="cart-subtotal-row">
+        <span>Total:</span>
+        <span id="cart-subtotal-amount">$0</span>
+      </div>
+      <div class="cart-cuotas-info" id="cart-cuotas-text">
+        💳 Hasta 3 cuotas sin interés
+      </div>
+      <button class="btn-checkout" id="btn-checkout">
+        Confirmar Pedido 🍰
+      </button>
+    </div>
+  </aside>
+
+  <!-- 10. Modal de Detalle de Producto -->
+  <div class="modal-overlay" id="product-detail-modal">
+    <div class="modal-content-card">
+      <button class="modal-close-btn" onclick="window.closeModals()">✕</button>
+      <div class="modal-body" id="product-modal-body">
+        <!-- Contenido dinámico -->
+      </div>
+    </div>
+  </div>
+
+  <!-- 11. Modal Informativo Ley 24.240 -->
+  <div class="modal-overlay" id="ley24240-info-modal">
+    <div class="modal-content-card">
+      <button class="modal-close-btn" onclick="window.closeModals()">✕</button>
+      <div class="modal-body">
+        <div style="font-size: 2.5rem; margin-bottom: 8px;">⚖️</div>
+        <h3 style="font-size: 1.8rem; margin-bottom: 12px; color: var(--choco-dark);">
+          Ley 24.240 de Defensa del Consumidor
+        </h3>
+        <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin-bottom: 20px;">
+          En la República Argentina, los consumidores y usuarios cuentan con protección constitucional (Art. 42 CN) y legal a través de la Ley 24.240. En <strong>Dulce Vicio</strong> nos comprometemos con:
+        </p>
+
+        <div style="background: #faf6f3; padding: 20px; border-radius: var(--radius-sm); margin-bottom: 20px; font-size: 0.88rem; line-height: 1.6; color: var(--choco-rich);">
+          <p style="margin-bottom: 10px;">
+            📌 <strong>Art. 4 (Información al consumidor):</strong> La información sobre los postres artesanales, ingredientes, alérgenos, precios en moneda de curso legal (ARS) y métodos de pago es clara, veraz y oportuna.
+          </p>
+          <p style="margin-bottom: 10px;">
+            📌 <strong>Art. 8 bis (Trato digno):</strong> Trato respetuoso e igualitario para todos nuestros clientes adolescentes, jóvenes y adultos.
+          </p>
+          <p style="margin-bottom: 10px;">
+            📌 <strong>Art. 10 ter y 34 (Derecho de revocación en compras electrónicas):</strong> Dispones de 10 días corridos desde recibido el producto para revocar la aceptación de compra sin ninguna penalidad ni costo.
+          </p>
+          <p>
+            📌 <strong>Art. 11 y 12 (Garantías de calidad):</strong> Garantizamos la óptima elaboración y frescura de nuestros alimentos artesanales.
+          </p>
+        </div>
+
+        <button class="btn-primary" style="width: 100%; justify-content: center;" onclick="window.closeModals()">
+          Cerrar Información
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 12. Modal del Botón de Arrepentimiento (Res. 424/2020) -->
+  <div class="modal-overlay" id="arrepentimiento-modal">
+    <div class="modal-content-card">
+      <button class="modal-close-btn" onclick="window.closeModals()">✕</button>
+      <div class="modal-body" id="arrepentimiento-modal-body">
+        <div style="font-size: 2.5rem; margin-bottom: 8px;">↩️</div>
+        <h3 style="font-size: 1.8rem; margin-bottom: 8px; color: var(--choco-dark);">
+          Botón de Arrepentimiento
+        </h3>
+        <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.5; margin-bottom: 20px;">
+          Conforme al <strong>Art. 34 de la Ley 24.240</strong> y la <strong>Resolución 424/2020</strong> de la Secretaría de Comercio Interior, podés solicitar la revocación y reembolso del 100% de tu compra dentro de los 10 días corridos.
+        </p>
+
+        <form id="form-arrepentimiento">
+          <div class="form-group">
+            <label class="form-label" for="arrepentimiento-pedido-id">Número de Pedido</label>
+            <input type="number" id="arrepentimiento-pedido-id" class="form-control" required placeholder="Ej: 104829" />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="arrepentimiento-email">Correo Electrónico con el que realizaste la compra</label>
+            <input type="email" id="arrepentimiento-email" class="form-control" required placeholder="tu-email@gmail.com" />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="arrepentimiento-motivo">Motivo (Opcional)</label>
+            <select id="arrepentimiento-motivo" class="form-control">
+              <option value="Derecho de revocación legal (10 días)">Derecho de revocación legal (10 días corridos)</option>
+              <option value="Error al seleccionar los postres">Error al seleccionar los postres</option>
+              <option value="Cambio de planes">Cambio de planes</option>
+              <option value="Otro">Otro motivo</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn-arrepentimiento-main" id="btn-submit-arrepentimiento">
+            Confirmar Arrepentimiento de Compra
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- 13. Modal de Checkout / Finalizar Pedido -->
+  <div class="modal-overlay" id="checkout-modal">
+    <div class="modal-content-card">
+      <button class="modal-close-btn" onclick="window.closeModals()">✕</button>
+      <div class="modal-body" id="checkout-modal-body">
+        <!-- Renderizado dinámicamente con app.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- 14. Toast Notification -->
+  <div class="toast-notification" id="toast-msg"></div>
+
+  <!-- Scripts -->
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

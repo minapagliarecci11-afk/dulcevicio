@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" height="100%">
+  <defs>
+    <!-- Background & Plate Gradients -->
+    <radialGradient id="plateBg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fff8f3"/>
+      <stop offset="70%" stop-color="#f5e6db"/>
+      <stop offset="100%" stop-color="#ebd2c0"/>
+    </radialGradient>
+    <radialGradient id="cookieDough" cx="42%" cy="40%" r="58%">
+      <stop offset="0%" stop-color="#f5caa0"/>
+      <stop offset="45%" stop-color="#deb07a"/>
+      <stop offset="85%" stop-color="#b87d46"/>
+      <stop offset="100%" stop-color="#804e25"/>
+    </radialGradient>
+    <radialGradient id="chocoChunk1" cx="35%" cy="30%" r="65%">
+      <stop offset="0%" stop-color="#542e18"/>
+      <stop offset="60%" stop-color="#30180a"/>
+      <stop offset="100%" stop-color="#190a03"/>
+    </radialGradient>
+    <radialGradient id="chocoMelt" cx="30%" cy="25%" r="70%">
+      <stop offset="0%" stop-color="#693c22"/>
+      <stop offset="80%" stop-color="#3b1b0a"/>
+      <stop offset="100%" stop-color="#140600"/>
+    </radialGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#572b11" flood-opacity="0.28"/>
+    </filter>
+    <filter id="cookieTexture">
+      <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="4" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="9" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+
+  <!-- Bakery Table Background -->
+  <rect width="800" height="800" fill="#fdfaf7"/>
+  <circle cx="400" cy="400" r="360" fill="url(#plateBg)"/>
+  <circle cx="400" cy="400" r="340" fill="none" stroke="#e0cbb9" stroke-width="4" stroke-dasharray="8 6"/>
+
+  <!-- Cookie Drop Shadow & Body -->
+  <g filter="url(#softShadow)">
+    <path d="M400 160 
+             C 490 155, 590 190, 625 270 
+             C 660 350, 650 470, 600 540 
+             C 545 615, 450 635, 370 630 
+             C 285 625, 200 580, 175 495 
+             C 145 405, 170 300, 230 230 
+             C 280 175, 340 165, 400 160 Z" 
+          fill="url(#cookieDough)" 
+          filter="url(#cookieTexture)"/>
+  </g>
+
+  <!-- Crinkles and Baked Cracks -->
+  <path d="M 280 280 Q 320 300 350 280 Q 380 260 410 290" stroke="#75421c" stroke-width="5" fill="none" opacity="0.65" stroke-linecap="round"/>
+  <path d="M 460 320 Q 490 350 520 330 Q 550 310 570 340" stroke="#75421c" stroke-width="6" fill="none" opacity="0.6" stroke-linecap="round"/>
+  <path d="M 320 440 Q 360 420 390 450 Q 430 480 470 450" stroke="#663615" stroke-width="7" fill="none" opacity="0.65" stroke-linecap="round"/>
+  <path d="M 260 380 Q 290 410 270 450" stroke="#75421c" stroke-width="4" fill="none" opacity="0.5" stroke-linecap="round"/>
+
+  <!-- Big Melted Chocolate Chunks -->
+  <!-- Chunk 1 - Center Top -->
+  <ellipse cx="370" cy="270" rx="38" ry="30" fill="url(#chocoChunk1)" transform="rotate(-15 370 270)"/>
+  <ellipse cx="362" cy="264" rx="14" ry="7" fill="#874e2d" opacity="0.6"/>
+
+  <!-- Chunk 2 - Center Big Molten Pool -->
+  <path d="M 430 380 C 470 370, 500 390, 490 425 C 480 460, 440 470, 410 455 C 380 440, 395 390, 430 380 Z" fill="url(#chocoMelt)"/>
+  <path d="M 440 390 C 460 385, 475 395, 470 410 C 465 425, 445 420, 440 390 Z" fill="#915632" opacity="0.5"/>
+
+  <!-- Chunk 3 - Upper Right -->
+  <ellipse cx="530" cy="260" rx="32" ry="26" fill="url(#chocoChunk1)" transform="rotate(25 530 260)"/>
+  <ellipse cx="522" cy="254" rx="10" ry="5" fill="#874e2d" opacity="0.6"/>
+
+  <!-- Chunk 4 - Left Side -->
+  <path d="M 240 330 C 270 325, 285 345, 275 370 C 265 395, 235 390, 225 370 C 215 350, 225 335, 240 330 Z" fill="url(#chocoChunk1)"/>
+
+  <!-- Chunk 5 - Bottom Right -->
+  <ellipse cx="520" cy="480" rx="34" ry="28" fill="url(#chocoMelt)" transform="rotate(-10 520 480)"/>
+
+  <!-- Chunk 6 - Bottom Left -->
+  <ellipse cx="330" cy="510" rx="30" ry="24" fill="url(#chocoChunk1)" transform="rotate(35 330 510)"/>
+
+  <!-- Sea Salt Flakes (Gourmet touch) -->
+  <rect x="420" y="240" width="8" height="8" rx="2" fill="#ffffff" opacity="0.85" transform="rotate(30 420 240)"/>
+  <rect x="470" y="370" width="9" height="9" rx="2" fill="#ffffff" opacity="0.9" transform="rotate(15 470 370)"/>
+  <rect x="360" y="470" width="7" height="7" rx="2" fill="#ffffff" opacity="0.8" transform="rotate(45 360 470)"/>
+  <rect x="290" y="360" width="8" height="8" rx="2" fill="#ffffff" opacity="0.8" transform="rotate(20 290 360)"/>
+  <rect x="550" y="380" width="7" height="7" rx="2" fill="#ffffff" opacity="0.75" transform="rotate(60 550 380)"/>
+
+  <!-- Badge Overlay -->
+  <g transform="translate(480, 80)">
+    <rect x="0" y="0" width="220" height="46" rx="23" fill="#ff4d88"/>
+    <text x="110" y="28" font-family="'Outfit', sans-serif" font-size="18" font-weight="800" fill="#ffffff" text-anchor="middle">NY STYLE 180G</text>
+  </g>
+</svg>

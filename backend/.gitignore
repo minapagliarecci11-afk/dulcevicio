@@ -1,0 +1,25 @@
+# Entornos virtuales
+.venv/
+venv/
+ENV/
+env/
+
+# Bytecode Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Variables de entorno secretas
+.env
+
+# Base de datos SQLite local (si se usa en pruebas)
+*.db
+*.sqlite3
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+
+# Alembic
+alembic/versions/*.pyc
