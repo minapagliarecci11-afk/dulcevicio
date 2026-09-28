@@ -10,6 +10,8 @@ from datetime import datetime, timezone
 
 # Asegurar acceso a los módulos de app
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 from app.db.database import SessionLocal, engine, Base
 from app.models.producto import Producto

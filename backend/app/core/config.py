@@ -5,7 +5,7 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 
 class Settings(BaseSettings):
     PROJECT_NAME: str = "Dulce Vicio - Pastelería Artesanal API"
-    DATABASE_URL: str = "postgresql://postgres:postgres@localhost:5432/ecommerce_db"
+    DATABASE_URL: str = "sqlite:///./ecommerce.db"
     CORS_ORIGINS: Union[str, List[str]] = "http://localhost:3000,http://localhost:5500,http://127.0.0.1:5500,http://localhost:8000,http://127.0.0.1:8000,http://localhost:5173"
     
     # Configuración de Seguridad y JWT
